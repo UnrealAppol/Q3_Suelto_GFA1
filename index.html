@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graded Formative Assessment 1</title>
+</head>
+
+<body>
+    <h1> NUMBER 1: </h1>
+    <h1 id="input_num1"></h1>
+    <h1 id="output_num1"></h1>
+    <br><br>
+
+    <h1> NUMBER 2: </h1>
+    <h1 id="input_num2"></h1>
+    <h1 id="output_num2"></h1>
+    <br>
+
+    <h1> NUMBER 3: </h1>
+    <h1 id="input_num3"></h1>
+    <h1 id="output_num3"></h1>
+    <h1> Check Console (F12)</h1>
+    <br><br>
+
+    <h1> Group Members: Alcantara, Urakami, Emberga, Mesias, Suelto </h1>
+
+    <script>
+        //-NUMBER 1 CODE-//
+        var nickname = "Daniel";
+        let height = 68;
+        var weight = 50;
+        var n = "\n"
+
+        let feet = 68/12;
+        let inches = 68%12;
+
+        var pounds = weight*2.20462;
+
+        alert("Name: " + nickname + n + "Height: " + Math.trunc(feet) + "'" + inches + n + "Weight: " + pounds + " lb"); 
+        //-NUMBER 1 CODE END-//
+
+        //-NUMBER 2 CODE-//
+        var firstname = prompt("Hello! Input your first name: ");
+        var lastname = prompt("Input your last name: ");
+        var birthyear = prompt("Input you birth year: ");
+
+        var age = 2024 - birthyear;
+        
+        document.getElementById("output_num2").innerHTML = "Hello " + firstname + " " + lastname + "! How does it feel being a " + age + " year old?";
+        //-NUMBER 2 CODE END-//
+
+        //-NUMBER 3 CODE-//
+        var information = confirm("Do you want to share your personal information?");
+
+        if (information == true){
+            console.log("Name: " + nickname + n + "Height: " + Math.trunc(feet) + "'" + inches + n + "Weight: " + pounds + " lb");
+        }
+        else{
+            console.log("User does not wish to share their information.");
+        }
+    </script>
+</body>
+</html>
